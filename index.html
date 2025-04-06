@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inovite - Website Under Construction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 6rem;
+      font-weight: 900;
+      color: #00ffe1;
+      position: relative;
+    }
+
+    .worker {
+      position: absolute;
+      width: 40px;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    .worker1 {
+      top: -60px;
+      left: 50px;
+    }
+
+    .worker2 {
+      top: -60px;
+      right: 80px;
+      animation-delay: 1s;
+    }
+
+    .worker3 {
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      animation-delay: 1.5s;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .subtitle {
+      margin-top: 40px;
+      font-size: 1.5rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+  <div style="position: relative;">
+    <h1>INOVITE</h1>
+    <img src="https://cdn-icons-png.flaticon.com/512/1548/1548682.png" class="worker worker1" alt="worker 1">
+    <img src="https://cdn-icons-png.flaticon.com/512/1548/1548697.png" class="worker worker2" alt="worker 2">
+    <img src="https://cdn-icons-png.flaticon.com/512/1548/1548683.png" class="worker worker3" alt="worker 3">
+  </div>
+
+  <p class="subtitle">We're working hard to build something amazing for you. Stay tuned 🚀</p>
+
+</body>
+</html>
