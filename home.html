@@ -107,35 +107,33 @@
   <!-- Main Page -->
   <div id="main">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3">
-  <div class="container-fluid d-flex justify-content-between">
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top py-3">
+  <div class="container-fluid">
     <!-- Left: Brand -->
     <a class="navbar-brand fw-bold fs-4" href="#">Inovite</a>
 
-    <!-- Center: Navigation -->
-    <div class="mx-auto d-none d-lg-block">
-      <ul class="navbar-nav flex-row gap-4">
-        <li class="nav-item"><a class="nav-link text-white" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
-      </ul>
-    </div>
-
-    <!-- Right: Toggle for Mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav">
+    <!-- Mobile Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
       <span class="navbar-toggler-icon"></span>
     </button>
-  </div>
 
-  <!-- Collapsible Nav for mobile -->
-  <div class="collapse navbar-collapse d-lg-none" id="mobileNav">
-    <ul class="navbar-nav text-center">
-      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-    </ul>
+    <!-- Centered Links -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-2 mb-lg-0 gap-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
+
 
 
     <!-- Fullscreen Hero Section -->
