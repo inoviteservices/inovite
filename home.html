@@ -63,17 +63,48 @@
 
   <!-- Main Page -->
   <div id="main">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Inovite</a>
-      </div>
-    </nav>
-
-    <section class="container text-center mt-5">
-      <h1>Welcome to Inovite</h1>
-      <p>We build what others only dream of 💭</p>
-    </section>
+    <!-- Place inside the #main div -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Inovite</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
+</nav>
+
+<!-- Fullscreen Hero Section -->
+<section class="hero-section">
+  <div class="hero-img-wrapper">
+    <img src="https://images.pexels.com/photos/20818623/pexels-photo-20818623/free-photo-of-cherry-blossom-in-the-temple.jpeg" alt="Inovite Banner" class="img-fluid w-100 h-100 object-fit-cover">
+    <div class="hero-text">
+      <h1 class="display-4 text-white fw-bold">Building the Future</h1>
+      <p class="text-white fs-5">We build what others only dream of 💭</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container py-5">
+  <h2>About Us</h2>
+  <p>We're a next-gen IT firm turning ideas into innovations.</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="container py-5">
+  <h2>Contact Us</h2>
+  <p>Reach out to collaborate or join the mission 🚀</p>
+</section>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     window.addEventListener('load', () => {
@@ -93,6 +124,37 @@
       }, 2000); // delay before fade
     });
   </script>
+<style>
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
 
+  .hero-img-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+
+  .hero-img-wrapper img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .hero-text h1,
+  .hero-text p {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  }
+</style>
 </body>
 </html>
