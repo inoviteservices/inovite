@@ -33,42 +33,49 @@
       </div>
     </div>
   </nav>
-<!-- Contact Section with Background -->
-<section class="contact-section text-white py-5" style="background: url('https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg') center/cover no-repeat;">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Let’s Talk</h2>
-      <p class="text-light">Got an idea, feedback, or just want to say hey? Drop us a line!</p>
+
+  <!-- Contact Section - Fully Responsive -->
+<section class="contact-section position-relative text-white py-5" style="background: url('images/contact-bg.jpg') center center/cover no-repeat;">
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.7); z-index: 1;"></div>
+  
+  <div class="container position-relative" style="z-index: 2;">
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10 col-xl-8 text-center mb-5">
+        <h2 class="fw-bold display-5">Let’s Talk</h2>
+        <p class="lead text-light">Got a project, an idea, or a random tech thought? We’d love to hear it.</p>
+      </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <form action="https://formsubmit.co/inovite.services@gmail.com" method="POST" class="bg-white text-dark p-4 rounded shadow">
+      <div class="col-12 col-md-10 col-lg-8">
+        <form action="https://formsubmit.co/inovite.services@gmail.com" method="POST" class="bg-white text-dark p-4 p-md-5 rounded-4 shadow-lg">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
 
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input type="text" class="form-control" name="name" id="name" required>
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="col-12 text-center mt-4">
+              <button type="submit" class="btn btn-primary px-5 py-2">Send Message</button>
+            </div>
           </div>
-
-          <div class="mb-3">
-            <label for="phone" class="form-label">Phone Number</label>
-            <input type="tel" class="form-control" name="phone" id="phone" required>
-          </div>
-
-          <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" name="email" id="email" required>
-          </div>
-
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" name="message" id="message" rows="5" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary px-4">Send Message</button>
         </form>
       </div>
     </div>
+  </div>
 </section>
 
 
