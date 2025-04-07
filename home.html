@@ -325,19 +325,35 @@
       }, 2000);
     });
   </script>
-<script src="https://widget.cxgenie.ai/widget.js" data-aid="786eb5d9-1f22-4fcc-9c70-b4c382c23562" data-lang="en"></script>
-
 <script>
-  // Wait 4–5 seconds after page load
-  window.addEventListener('load', function () {
-    setTimeout(function () {
-      // Check if the widget is available and then try to open it
-      if (window.CxGenieWidget && typeof window.CxGenieWidget.open === 'function') {
-        window.CxGenieWidget.open();
-      }
-    }, 4500); // 4.5 seconds delay
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const splash = document.getElementById('splash');
+      const main = document.getElementById('main');
+
+      splash.style.opacity = '0';
+
+      setTimeout(() => {
+        splash.style.display = 'none';
+        main.style.display = 'block';
+        setTimeout(() => {
+          main.style.opacity = '1';
+
+          // 💬 Load chatbot after splash finishes
+          setTimeout(() => {
+            const script = document.createElement('script');
+            script.src = "https://widget.cxgenie.ai/widget.js";
+            script.setAttribute("data-aid", "786eb5d9-1f22-4fcc-9c70-b4c382c23562");
+            script.setAttribute("data-lang", "en");
+            document.body.appendChild(script);
+          }, 1000); // Delay after splash before chatbot loads (can tweak this)
+
+        }, 100);
+      }, 1000);
+    }, 2000); // Initial splash delay
   });
 </script>
+
 
 </body>
 </html>
