@@ -15,47 +15,9 @@
       background-color: #fff;
     }
 
-    /* Splash Screen */
-    #splash {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color: #050f18;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      opacity: 1;
-      transition: opacity 1s ease-in-out;
-    }
-
-    #splash img {
-      max-width: 150px;
-      animation: pop 0.6s ease-out;
-    }
-
-    @keyframes pop {
-      0% {
-        transform: scale(0.8);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    #main {
-      display: none;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
-    }
-
     .hero-section {
       position: relative;
-      height: 100vh;
+      height: 50vh; /* Reduced height */
       overflow: hidden;
     }
 
@@ -99,45 +61,34 @@
 </head>
 <body>
 
-  <!-- Splash Screen -->
-  <div id="splash">
-    <img src="pictures/inovite%20services.png" alt="Inovite Logo" />
-  </div>
-
   <!-- Main Page -->
-  <div id="main">
+  <div>
 
     <!-- Navbar -->
-    <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
-  <div class="container">
-    <!-- Logo / Brand -->
-    <a class="navbar-brand fw-bold text-uppercase" href="#">Inovite</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-uppercase" href="#">Inovite</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <!-- Toggler (hamburger) for mobile -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+          <ul class="navbar-nav gap-4">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <!-- Navbar Links -->
-    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-      <ul class="navbar-nav gap-4">
-        <li class="nav-item">
-          <a class="nav-link"  href="home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-
-    <!-- Fullscreen Hero Section -->
+    <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-img-wrapper">
         <div class="overlay"></div>
@@ -148,64 +99,57 @@
         </div>
       </div>
     </section>
-   <!-- About Section -->
-<section id="about" class="py-5 bg-light">
-  <div class="container">
-    <!-- Company Overview -->
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Who We Are</h2>
-      <p class="text-muted">Inovite isn’t just a tech company — it’s a movement. We’re a next-gen team on a mission to rewire what’s possible with technology.</p>
-      <p class="lead">From scalable web apps to IoT-powered systems and real-time data dashboards — we build with ambition and execute with precision.</p>
-    </div>
 
-    <!-- Team Introduction -->
-    <div class="row text-center mb-5">
-      <!-- Raj (You) -->
-      <div class="col-md-4">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-          <img src="https://w1.pngwing.com/pngs/156/330/png-transparent-book-emoji-green-symbol-pictogram-project-telephony-technology-line.png" alt="Raj Patil" class="rounded-circle mb-3" width="100" height="100">
-          <h5 class="fw-bold">Raj Patil</h5>
-          <p class="text-muted">Full Stack Developer & Tech Visionary</p>
-          <p>Builder of beautiful frontends & solid backends. Code is my canvas, and I’m painting the future.</p>
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Who We Are</h2>
+          <p class="text-muted">Inovite isn’t just a tech company — it’s a movement. We’re a next-gen team on a mission to rewire what’s possible with technology.</p>
+          <p class="lead">From scalable web apps to IoT-powered systems and real-time data dashboards — we build with ambition and execute with precision.</p>
+        </div>
+
+        <!-- Team Section -->
+        <div class="row text-center mb-5">
+          <div class="col-md-4">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+              <img src="https://w1.pngwing.com/pngs/156/330/png-transparent-book-emoji-green-symbol-pictogram-project-telephony-technology-line.png" alt="Raj Patil" class="rounded-circle mb-3" width="100" height="100">
+              <h5 class="fw-bold">Raj Patil</h5>
+              <p class="text-muted">Full Stack Developer & Tech Visionary</p>
+              <p>Builder of beautiful frontends & solid backends. Code is my canvas, and I’m painting the future.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+              <img src="https://w1.pngwing.com/pngs/156/330/png-transparent-book-emoji-green-symbol-pictogram-project-telephony-technology-line.png" alt="Riddhish" class="rounded-circle mb-3" width="100" height="100">
+              <h5 class="fw-bold">Riddhish</h5>
+              <p class="text-muted">Data Analyst & Systems Strategist</p>
+              <p>Transforms chaos into clarity. From raw data to business gold — that’s his superpower.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+              <img src="https://w1.pngwing.com/pngs/156/330/png-transparent-book-emoji-green-symbol-pictogram-project-telephony-technology-line.png" alt="Sanket" class="rounded-circle mb-3" width="100" height="100">
+              <h5 class="fw-bold">Sanket</h5>
+              <p class="text-muted">Business Dev & Client Relations</p>
+              <p>More than just the bridge between tech and people — he’s the connector that keeps things moving.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h3 class="fw-bold mb-3">Our Mission</h3>
+          <p class="lead">To empower bold ideas and future-forward ventures through clean code, smart design, and relentless execution.</p>
+          <p class="text-muted">We don’t chase trends — we set them. From MVPs to moonshots, Inovite is here to build the tech the world *wants* but hasn’t seen yet.</p>
         </div>
       </div>
+    </section>
 
-      <!-- Riddhish -->
-      <div class="col-md-4">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-          <img src="https://w1.pngwing.com/pngs/156/330/png-transparent-book-emoji-green-symbol-pictogram-project-telephony-technology-line.png" alt="Riddhish" class="rounded-circle mb-3" width="100" height="100">
-          <h5 class="fw-bold">Riddhish</h5>
-          <p class="text-muted">Data Analyst & Systems Strategist</p>
-          <p>Transforms chaos into clarity. From raw data to business gold — that’s his superpower.</p>
-        </div>
-      </div>
-
-      <!-- Sanket -->
-      <div class="col-md-4">
-        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-          <img src="https://w1.pngwing.com/pngs/156/330/png-transparent-book-emoji-green-symbol-pictogram-project-telephony-technology-line.png" alt="Sanket" class="rounded-circle mb-3" width="100" height="100">
-          <h5 class="fw-bold">Sanket</h5>
-          <p class="text-muted">Business Dev & Client Relations</p>
-          <p>More than just the bridge between tech and people — he’s the connector that keeps things moving.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Goals -->
-    <div class="text-center">
-      <h3 class="fw-bold mb-3">Our Mission</h3>
-      <p class="lead">To empower bold ideas and future-forward ventures through clean code, smart design, and relentless execution.</p>
-      <p class="text-muted">We don’t chase trends — we set them. From MVPs to moonshots, Inovite is here to build the tech the world *wants* but hasn’t seen yet.</p>
-    </div>
-  </div>
-</section>
-
-
-    <!-- Footer Section -->
-    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+    <!-- Footer -->
+    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5">
       <div class="row gy-5 pt-5">
-        
-        <!-- Get In Touch -->
         <div class="col-lg-4 col-md-6">
           <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
           <p><i class="fa fa-map-marker-alt me-2"></i>Akola, Maharashtra</p>
@@ -213,7 +157,6 @@
           <p><i class="fa fa-envelope me-2"></i>inovite.services@gmail.com</p>
         </div>
 
-        <!-- Our Services -->
         <div class="col-lg-4 col-md-6">
           <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">What We Do</h5>
           <p>We're not just another IT firm. At Inovite, we turn futuristic ideas into powerful digital solutions.</p>
@@ -226,7 +169,6 @@
           </ul>
         </div>
 
-        <!-- About Us -->
         <div class="col-lg-4 col-md-12">
           <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">About Inovite</h5>
           <p>At Inovite, we’re driven by innovation and built to disrupt. Our mission? To design intelligent, scalable digital solutions that push the edge of what’s possible.</p>
@@ -234,7 +176,6 @@
         </div>
       </div>
 
-      <!-- Map -->
       <div class="row pt-4">
         <div class="col-12">
           <iframe 
@@ -261,26 +202,6 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Splash Screen Transition -->
-  <script>
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        const splash = document.getElementById('splash');
-        const main = document.getElementById('main');
-
-        splash.style.opacity = '0';
-
-        setTimeout(() => {
-          splash.style.display = 'none';
-          main.style.display = 'block';
-          setTimeout(() => {
-            main.style.opacity = '1';
-          }, 100);
-        }, 1000);
-      }, 2000);
-    });
-  </script>
 
 </body>
 </html>
