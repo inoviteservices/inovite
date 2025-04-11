@@ -58,50 +58,45 @@
     </div>
   </div>
 </nav>
-
-<!-- Contact Section -->
-<section class="contact-section position-relative text-white py-5" style="background: url('https://images.pexels.com/photos/220783/pexels-photo-220783.jpeg') center center/cover no-repeat;">
-  <div class="overlay position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0,0,0,0.7); z-index: 1;"></div>
-  
-  <div class="container position-relative" style="z-index: 2;">
-    <div class="row justify-content-center">
-      <div class="col-12 col-lg-10 col-xl-8 text-center mb-5">
-        <h2 class="fw-bold display-5">Let’s Talk</h2>
-        <p class="lead text-light">Got a project, an idea, or a random tech thought? We’d love to hear it.</p>
+<form action="https://usebasin.com/f/48d0f99cb63e" method="POST" class="contact-form" target="_blank">
+  <div class="row">
+    <!-- Name -->
+    <div class="col-lg-6 col-md-6 col-12">
+      <div class="form-group">
+        <input name="name" type="text" placeholder="Full Name" required>
       </div>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8">
-        <form action="https://formsubmit.co/inovite.services@gmail.com" method="POST" class="bg-white text-dark p-4 p-md-5 rounded-4 shadow-lg">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
 
-          <div class="row gy-3">
-            <div class="col-md-6">
-              <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" name="name" required>
-            </div>
-            <div class="col-md-6">
-              <label for="phone" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{10}" required>
-            </div>
-            <div class="col-12">
-              <label for="email" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="col-12">
-              <label for="message" class="form-label">Your Message</label>
-              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-            </div>
-            <div class="col-12 text-center mt-4">
-              <button type="submit" class="btn btn-primary px-5 py-2">Send Message</button>
-            </div>
-          </div>
-        </form>
+    <!-- Email -->
+    <div class="col-lg-6 col-md-6 col-12">
+      <div class="form-group">
+        <input name="email" type="email" placeholder="Email Address" required>
+      </div>
+    </div>
+
+    <!-- Subject -->
+    <div class="col-12">
+      <div class="form-group">
+        <input name="subject" type="text" placeholder="Subject" required>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="col-12">
+      <div class="form-group">
+        <textarea name="message" placeholder="Your message here..." rows="6" required></textarea>
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <div class="col-12">
+      <div class="form-group button">
+        <button type="submit" class="btn">Send Message</button>
       </div>
     </div>
   </div>
-</section>
+</form>
+
  <footer class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5">
     <div class="row gy-5 pt-5">
       <div class="col-lg-4 col-md-6">
