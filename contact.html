@@ -1,145 +1,484 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="zxx">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inovite - Contact Us</title>
-  <link rel="icon" type="image/x-icon" href="pictures/inovite%20services.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .form-label {
-      font-weight: 500;
-    }
-    .contact-section .form-control:focus {
-      border-color: #0d6efd;
-      box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
-    }
-    .btn-primary {
-      background-color: #0d6efd;
-      border-color: #0d6efd;
-      transition: all 0.3s ease-in-out;
-    }
-    .btn-primary:hover {
-      background-color: #0b5ed7;
-      border-color: #0a58ca;
-    }
-    .footer-section iframe {
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Inovite - Contact Us </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/inovite-favicon.png" />
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
 </head>
+
 <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+    <header class="header navbar-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <div class="nav-inner">
+                        <!-- Start Navbar -->
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/inovite-logo.png" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                                <ul id="nav" class="navbar-nav ms-auto">
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/" aria-label="Toggle navigation">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="about.html" aria-label="Toggle navigation">About</a>
+                                    </li>
+                                    <li class="nav-item">
+    <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+        data-bs-target="#submenu-services" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">Services</a>
+    <ul class="sub-menu collapse" id="submenu-services">
+        <li class="nav-item"><a href="web-development.html">Web Development</a></li>
+        <li class="nav-item"><a href="data-analysis.html">Data Analysis</a></li>
+        <li class="nav-item"><a href="ui-ux.html">UI/UX Design</a></li>
+        <li class="nav-item"><a href="automation.html">Automation & Scripting</a></li>
+        <li class="nav-item"><a href="tech-consulting.html">Tech Consulting</a></li>
+        <li class="nav-item"><a href="iot.html">IoT Integration</a></li>
+        <li class="nav-item"><a href="maintenance.html">Maintenance & Support</a></li>
+    </ul>
+</li>
+
+
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="contact.html" aria-label="Toggle navigation">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="career.html" aria-label="Toggle navigation">Careers</a>
+                                    </li>
+                                    
+
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                            <div class="button">
+                                 <!-- <a href="signin.html" class="signin">Sign In</a> -->
+                                 <a href="resources.html" class="signup">Resources</a>
+                             </div>
+
+
+                        </nav>
+                        <!-- End Navbar -->
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </header>
+    <!-- End Header Area -->
+<!-- Start Hero Area -->
+ <section class="hero-area">
+     <div class="main__circle"></div>
+     <div class="main__circle2"></div>
+     <div class="main__circle3"></div>
+     <div class="main__circle4"></div>
+     <div class="container">
+         <div class="row align-items-center">
+             <!-- Image Column - Now First -->
+             <div class="col-lg-7 col-12 mb-4 mb-lg-0">
+                 <div class="app-image">
+                     <div class="image-bg-shape"></div>
+                     <img src="assets/images/inovite-about-1.png" alt="inovite about section" style="border-radius: 22px;">
+                 </div>
+             </div>
+ 
+             <!-- Text Content Column - Now Second -->
+           <div class="col-lg-5 col-md-12 col-12">
+   <div class="hero-content">
+     <h2 class="wow fadeInUp" data-wow-delay=".2s">About Inovite</h2>
+     <p class="wow fadeInUp" data-wow-delay=".4s">
+       Founded in 2025, <strong>Inovite Services Pvt. Ltd.</strong> is a forward-driven IT solutions company built to empower next-gen businesses with cutting-edge digital infrastructure. We’re not just a development agency - we’re the tech partner that grows with you.
+     </p>
+     <p class="wow fadeInUp" data-wow-delay=".6s">
+       Our expertise spans <strong>full-stack web development, intelligent data analytics, UI/UX strategy, cloud integration</strong>, and everything in between. Whether you're a startup prototyping your first MVP or an enterprise scaling your digital footprint, we deliver solutions that are fast, flexible, and future-ready.
+     </p>
+     <p class="wow fadeInUp" data-wow-delay="1s">
+       Backed by bold ideas, creative collaboration, and a commitment to quality, Inovite is here to help you <strong>build what's next</strong>. Because the future doesn’t wait - and neither should you.
+     </p>
+   </div>
+ </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero Area -->
+<!-- Start Meet the Founders Area -->
+<section class="team section py-5 bg-light">
   <div class="container">
-    <a class="navbar-brand fw-bold text-uppercase" href="#">Inovite</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <div class="section-title">
+          <h3 class="wow zoomIn" data-wow-delay=".2s">Meet the Founders</h3>
+          <h2 class="wow fadeInUp" data-wow-delay=".4s">The Minds Behind Inovite</h2>
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            Techies. Dreamers. Builders. We’re three co-founders shaping scalable tech with purpose and passion.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-      <ul class="navbar-nav gap-4">
-        <li class="nav-item">
-          <a class="nav-link" href="home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Contact</a>
-        </li>
-      </ul>
+    <!-- Founder: Riddhish Joshi -->
+    <div class="row align-items-center mb-5 g-4">
+      <div class="col-lg-5 col-md-12 wow fadeInLeft" data-wow-delay=".4s">
+        <div class="rounded-4 overflow-hidden shadow" style="border-radius: 22px;">
+          <img src="assets/images/inovite-about-1.png"
+               alt="Riddhish Joshi"
+               class="img-fluid w-100"
+               style="object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12 wow fadeInRight" data-wow-delay=".6s">
+        <div class="team-content ps-lg-4">
+          <h3>Riddhish Joshi</h3>
+          <p class="text-muted mb-1"><strong>Co-Founder & Data Analyst</strong></p>
+          <p>
+            Data isn’t just numbers for Riddhish — it’s a story waiting to be told. With a deep understanding of analytical tools and a sharp sense of curiosity, he specializes in turning raw datasets into actionable insights that drive meaningful outcomes.
+            <br><br>
+            At Inovite, he leads the data intelligence division, bridging the gap between backend systems and real-world decision-making. His ability to translate complexity into simplicity empowers our clients to make smarter moves in less time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Founder: Raj Patil -->
+    <div class="row align-items-center flex-lg-row-reverse mb-5 g-4">
+      <div class="col-lg-5 col-md-12 wow fadeInRight" data-wow-delay=".4s">
+        <div class="rounded-4 overflow-hidden shadow" style="border-radius: 22px;">
+          <img src="assets/images/inovite-about-1.png"
+               alt="Raj Patil"
+               class="img-fluid w-100"
+               style="object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12 wow fadeInLeft" data-wow-delay=".6s">
+        <div class="team-content pe-lg-4">
+          <h3>Raj Patil</h3>
+          <p class="text-muted mb-1"><strong>Co-Founder & Full-Stack Developer</strong></p>
+          <p>
+            Raj is the code architect behind Inovite’s most powerful builds. With mastery in frontend and backend technologies, he brings every digital product to life — whether it's a lightning-fast landing page or a complex enterprise app.
+            <br><br>
+            His tech stack spans Python, Django, JavaScript, Tailwind, and more — always pushing the boundary of performance and polish. From UI design to backend ops, Raj ensures our tech not only functions — but thrives under pressure.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Founder: Sanket Ingle -->
+    <div class="row align-items-center g-4">
+      <div class="col-lg-5 col-md-12 wow fadeInLeft" data-wow-delay=".4s">
+        <div class="rounded-4 overflow-hidden shadow" style="border-radius: 22px;">
+          <img src="assets/images/inovite-about-1.png"
+               alt="Sanket Ingle"
+               class="img-fluid w-100"
+               style="object-fit: cover;">
+        </div>
+      </div>
+      <div class="col-lg-7 col-md-12 wow fadeInRight" data-wow-delay=".6s">
+        <div class="team-content ps-lg-4">
+          <h3>Sanket Ingle</h3>
+          <p class="text-muted mb-1"><strong>Co-Founder & Director</strong></p>
+          <p>
+            Sanket is the vision-driver, connector, and strategist who keeps Inovite evolving. With a natural talent for communication and relationship-building, he takes ideas off the whiteboard and into the real world.
+            <br><br>
+            He plays a key role in partnership development, client engagement, and mapping long-term growth. With his instinct for storytelling and people-first approach, Sanket keeps the team inspired and the company on track to real-world impact.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
-<form action="https://usebasin.com/f/48d0f99cb63e" method="POST" class="contact-form" target="_blank">
-  <div class="row">
-    <!-- Name -->
-    <div class="col-lg-6 col-md-6 col-12">
-      <div class="form-group">
-        <input name="name" type="text" placeholder="Full Name" required>
+</section>
+
+
+<!-- End Meet the Founders Area -->
+<!-- Start What Sets Us Apart Area -->
+<section id="what-sets-us-apart" class="section bg-white py-5">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 text-center">
+        <div class="section-title">
+          <h3 class="wow zoomIn" data-wow-delay=".2s">what sets us apart</h3>
+          <h2 class="wow fadeInUp" data-wow-delay=".4s">Beyond Code. It’s Our Mindset.</h2>
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            At Inovite, we're not just tech experts. We're builders of bold ideas — driven by passion, guided by purpose, and powered by curiosity.
+          </p>
+        </div>
       </div>
     </div>
 
-    <!-- Email -->
-    <div class="col-lg-6 col-md-6 col-12">
-      <div class="form-group">
-        <input name="email" type="email" placeholder="Email Address" required>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+        <div class="card h-100 border-0 shadow rounded-4 p-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3">🚀 Startup Energy</h5>
+            <p class="card-text">
+              We move fast, stay lean, and think big. Agility is in our DNA — and that’s what helps us deliver standout results on every project.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Subject -->
-    <div class="col-12">
-      <div class="form-group">
-        <input name="subject" type="text" placeholder="Subject" required>
+      <!-- Card 2 -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+        <div class="card h-100 border-0 shadow rounded-4 p-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3">🧠 Tech-First Thinking</h5>
+            <p class="card-text">
+              We use tech as a tool to solve real problems — with strong foundations in full-stack dev, data, and automation that scales with you.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Message -->
-    <div class="col-12">
-      <div class="form-group">
-        <textarea name="message" placeholder="Your message here..." rows="6" required></textarea>
+      <!-- Card 3 -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+        <div class="card h-100 border-0 shadow rounded-4 p-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3">🌍 Human-Centered</h5>
+            <p class="card-text">
+              From UI to UX to user trust — we design with people in mind. Our builds are intuitive, accessible, and built to wow real humans.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Submit -->
-    <div class="col-12">
-      <div class="form-group button">
-        <button type="submit" class="btn">Send Message</button>
+      <!-- Card 4 -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".9s">
+        <div class="card h-100 border-0 shadow rounded-4 p-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3">📊 Insight-Driven</h5>
+            <p class="card-text">
+              Every decision is backed by logic, not guesswork. We analyze, validate, and track everything — from product flow to business KPIs.
+            </p>
+          </div>
+        </div>
       </div>
+
+      <!-- Card 5 -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.1s">
+        <div class="card h-100 border-0 shadow rounded-4 p-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3">⚙️ Scalable by Default</h5>
+            <p class="card-text">
+              Whether you’re at MVP or scale-up stage — we build clean, modular, and future-ready tech that grows with your goals.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.3s">
+        <div class="card h-100 border-0 shadow rounded-4 p-4">
+          <div class="card-body">
+            <h5 class="card-title mb-3">💬 Transparent AF</h5>
+            <p class="card-text">
+              No fluff, no hiding. We keep it real with honest updates, clear timelines, and open conversations — always.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-</form>
+</section>
 
- <footer class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5">
-    <div class="row gy-5 pt-5">
-      <div class="col-lg-4 col-md-6">
-        <h5 class="footer-heading">Get In Touch</h5>
-        <p><i class="fa fa-map-marker-alt me-2"></i>Akola, Maharashtra</p>
-        <p><i class="fa fa-phone-alt me-2"></i>+91 74477 06777</p>
-        <p><i class="fa fa-envelope me-2"></i>inovite.services@gmail.com</p>
-      </div>
 
-      <div class="col-lg-4 col-md-6">
-        <h5 class="footer-heading">What We Do</h5>
-        <ul class="list-unstyled">
-          <li><i class="fa fa-check text-primary me-2"></i>Full-Stack Web Development</li>
-          <li><i class="fa fa-check text-primary me-2"></i>Custom API & Backend Solutions</li>
-          <li><i class="fa fa-check text-primary me-2"></i>IoT Integration</li>
-          <li><i class="fa fa-check text-primary me-2"></i>Data Analytics & Visualization</li>
-          <li><i class="fa fa-check text-primary me-2"></i>Scalable Cloud Deployments</li>
-        </ul>
-      </div>
+ <!-- Start Call Action Area -->
+<section class="call-action">
+    <div class="container">
+        <div class="inner-content">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-8 col-12">
+                    <div class="text">
+                        <h2>Have a project in mind?<br>Let’s build something epic.</h2>
+                        <p style="color: #fff;" class="mt-20">
+                            Whether it's full-stack apps, smart dashboards, or digital growth - we’ve got you covered.
+                            <br>Hit us up and let’s make it real.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4 col-12">
+                    <div class="button">
+<!--                         <a href="https://instagram.com/inovite.in" class="btn">Let’s Connect</a> -->
+<a href="https://instagram.com/inovite.in" target="_blank" class="btn" onclick="alert('Greet from Inovite - slide into our DMs, we’re listening');">
+    Let's Connect
+</a>
 
-      <div class="col-lg-4 col-md-12">
-        <h5 class="footer-heading">About Inovite</h5>
-        <p>At Inovite, we’re driven by innovation and built to disrupt. Our mission? To design intelligent, scalable digital solutions that push the edge of what’s possible.</p>
-        <p>From startups to smart cities, we partner with forward-thinkers to build tech that doesn’t just meet today’s needs — it sets the trend for tomorrow.</p>
-      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <div class="row pt-4">
-      <div class="col-12">
-        <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119430.4213354677!2d76.94312262509317!3d20.70207450560958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd73192c32a5df1%3A0xcfa72a91e826b253!2sAkola%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1743972390194!5m2!1sen!2sin" 
-          style="width: 100%; height: 220px;" 
-          allowfullscreen="" 
-          loading="lazy">
-        </iframe>
-      </div>
+
+
+    <!-- Start Footer Area -->
+<footer class="footer section">
+    <!-- Start Footer Top -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="inner-content">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-about">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/inovite-logo.png" alt="Inovite Logo">
+                                </a>
+                            </div>
+                            <p>Empowering businesses with smart tech, custom code, and data-driven solutions — that’s the Inovite mindset.</p>
+                            <p class="copyright-text">
+                                <span>© 2025 Inovite Services Pvt. Ltd.</span> Built with 💻 by the Inovite team.
+                            </p>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-link">
+                            <h3>Solutions</h3>
+                            <ul>
+                                <li><a href="web-development.html">Full-Stack Development</a></li>
+                                <li><a href="data-analysis.html">Data Analytics</a></li>
+                                <li><a href="tech-consulting.html">Custom Platforms</a></li>
+                                <li><a href="ui-ux.html">UI/UX Services</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer f-link">
+                            <h3>Company</h3>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="resources.html">Our Work</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="career.html">Internships</a></li>
+                            </ul>
+                        </div>
+                        <!-- End Single Widget -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <!-- Single Widget -->
+                        <div class="single-footer newsletter">
+    <h3>Stay in the Loop</h3>
+    <p>Subscribe to get updates, dev insights, and startup-level tech talk from Team Inovite.</p>
+    <form action="https://usebasin.com/f/48d0f99cb63e" method="POST" class="newsletter-form">
+        <input name="EMAIL" placeholder="Email address" required type="email">
+        <div class="button">
+            <button type="submit" class="sub-btn"><i class="lni lni-envelope"></i></button>
+        </div>
+    </form>
+</div>
+
+                        <!-- End Single Widget -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
-<div class="container-fluid bg-dark text-white py-3">
-    <div class="text-center">
-      <p class="mb-0">&copy; 2025 Inovite Services. All Rights Reserved.</p>
-    </div>
-  </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--/ End Footer Top -->
+</footer>
+<!--/ End Footer Area -->
+
+
+    <!-- ========================= scroll-top ========================= -->
+    <!-- <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a> -->
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/count-up.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://widget.cxgenie.ai/widget.js" data-aid="786eb5d9-1f22-4fcc-9c70-b4c382c23562" data-lang="en"></script>
+    <script>
+        //========= testimonial 
+        tns({
+            container: '.testimonial-slider',
+            items: 3,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            controls: false,
+            controlsText: ['<i class="lni lni-arrow-left"></i>', '<i class="lni lni-arrow-right"></i>'],
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                540: {
+                    items: 1,
+                },
+                768: {
+                    items: 1,
+                },
+                992: {
+                    items: 1,
+                },
+                1170: {
+                    items: 2,
+                }
+            }
+        });
+
+        //====== counter up 
+        var cu = new counterUp({
+            start: 0,
+            duration: 2000,
+            intvalues: true,
+            interval: 100,
+            append: " ",
+        });
+        cu.start();
+    </script>
 </body>
+
 </html>
