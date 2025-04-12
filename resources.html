@@ -9,7 +9,6 @@
       margin: 0;
       padding: 0;
       background: #111;
-      color: #fff;
       font-family: 'Courier New', monospace;
       height: 100%;
       overflow: hidden;
@@ -19,8 +18,23 @@
       position: relative;
       width: 100%;
       height: 100vh;
-      overflow: hidden;
       background: linear-gradient(to bottom, #1c1c1c, #111);
+      overflow: hidden;
+    }
+
+    h1, p {
+      position: absolute;
+      top: 30px;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      z-index: 2;
+    }
+
+    p {
+      top: 90px;
+      font-size: 1rem;
+      color: #aaa;
     }
 
     .ground {
@@ -32,50 +46,18 @@
       background: #2e2e2e;
     }
 
-    .runner {
+    #car {
       position: absolute;
       bottom: 60px;
       left: 100px;
-      width: 40px;
-      height: 40px;
-      background: #00e0ff;
-      border-radius: 5px;
-      animation: run 0.3s steps(2) infinite;
-    }
-
-    .obstacle {
-      position: absolute;
-      bottom: 60px;
-      width: 20px;
-      height: 40px;
-      background: #ff0040;
-    }
-
-    h1 {
-      position: absolute;
-      top: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 3rem;
-      color: #fff;
-    }
-
-    p {
-      position: absolute;
-      top: 90px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 1.2rem;
-      color: #aaa;
-    }
-
-    @keyframes run {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(0); }
+      width: 60px;
+      height: auto;
+      z-index: 2;
+      transition: bottom 0.2s ease;
     }
 
     .jump {
-      animation: jump 0.4s ease-out;
+      animation: jump 0.5s ease-out;
     }
 
     @keyframes jump {
@@ -83,60 +65,115 @@
       50% { bottom: 160px; }
       100% { bottom: 60px; }
     }
+
+    .obstacle {
+      position: absolute;
+      bottom: 60px;
+      width: 40px;
+      height: auto;
+      z-index: 1;
+    }
+
+    /* Start Screen Modal */
+    #startModal {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.9);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 5;
+    }
+
+    #startModal button {
+      padding: 10px 20px;
+      background: #00e0ff;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+      color: #000;
+      cursor: pointer;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
-  <div id="game">
-    <h1>404 – Page Not Found</h1>
-    <p>But hey, try jumping over bugs until we find the page...</p>
-    <div class="runner" id="runner"></div>
-    <div class="ground"></div>
+
+<div id="game">
+  <h1>404 – Page Not Found</h1>
+  <p>But you can race while we find the page 😅</p>
+  <img src="https://cdn-icons-png.flaticon.com/512/743/743988.png" id="car" alt="Car">
+  <div class="ground"></div>
+
+  <!-- Start Modal -->
+  <div id="startModal">
+    <h2>404 - Wanna Race?</h2>
+    <p>Press Start and use <strong>Space</strong> to jump obstacles!</p>
+    <button onclick="startGame()">Start</button>
   </div>
+</div>
 
-  <script>
-    const game = document.getElementById('game');
-    const runner = document.getElementById('runner');
-    let isJumping = false;
+<script>
+  const car = document.getElementById('car');
+  const game = document.getElementById('game');
+  const startModal = document.getElementById('startModal');
+  let isJumping = false;
+  let gameRunning = false;
 
-    document.addEventListener('keydown', (e) => {
-      if (e.code === 'Space' && !isJumping) {
-        runner.classList.add('jump');
-        isJumping = true;
-        setTimeout(() => {
-          runner.classList.remove('jump');
-          isJumping = false;
-        }, 400);
-      }
-    });
-
-    function createObstacle() {
-      const obstacle = document.createElement('div');
-      obstacle.classList.add('obstacle');
-      obstacle.style.left = '100%';
-      game.appendChild(obstacle);
-
-      let position = 100;
-      const moveInterval = setInterval(() => {
-        if (position < -20) {
-          clearInterval(moveInterval);
-          obstacle.remove();
-        } else {
-          position -= 4;
-          obstacle.style.left = position + '%';
-
-          // Collision
-          const runnerBottom = parseInt(window.getComputedStyle(runner).bottom);
-          const obstacleLeft = parseInt(obstacle.style.left);
-          if (obstacleLeft < 13 && obstacleLeft > 9 && runnerBottom <= 60) {
-            alert('💀 Game Over — Page still not found.');
-            location.reload();
-          }
-        }
-      }, 20);
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space' && !isJumping && gameRunning) {
+      car.classList.add('jump');
+      isJumping = true;
+      setTimeout(() => {
+        car.classList.remove('jump');
+        isJumping = false;
+      }, 500);
     }
+  });
 
-    setInterval(createObstacle, 1600);
-  </script>
+  function startGame() {
+    startModal.style.display = 'none';
+    gameRunning = true;
+    setInterval(createObstacle, 2000);
+  }
+
+  function createObstacle() {
+    const obstacle = document.createElement('img');
+    obstacle.src = "https://cdn-icons-png.flaticon.com/512/3209/3209265.png"; // obstacle png
+    obstacle.classList.add('obstacle');
+    obstacle.style.left = '100%';
+    obstacle.style.height = '40px';
+    game.appendChild(obstacle);
+
+    let position = 100;
+    const moveInterval = setInterval(() => {
+      if (!gameRunning) {
+        clearInterval(moveInterval);
+        return;
+      }
+
+      if (position < -5) {
+        clearInterval(moveInterval);
+        obstacle.remove();
+      } else {
+        position -= 0.7;
+        obstacle.style.left = position + '%';
+
+        // Collision check
+        const obstacleLeft = parseInt(obstacle.style.left);
+        const carBottom = parseInt(window.getComputedStyle(car).bottom);
+        if (obstacleLeft < 12 && obstacleLeft > 9 && carBottom <= 60) {
+          alert('💥 Crash! Game Over — but 404s happen.');
+          location.reload();
+        }
+      }
+    }, 20);
+  }
+</script>
+
 </body>
 </html>
-
