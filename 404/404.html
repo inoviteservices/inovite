@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>404 - Car Game</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #222;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+    canvas {
+      display: block;
+      background: #555;
+      width: 100vw;
+      height: 100vh;
+    }
+    .overlay {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 18px;
+      z-index: 10;
+      color: white;
+    }
+    .score {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 18px;
+      z-index: 12;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+    .press-msg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      border-radius: 10px;
+      z-index: 14;
+    }
+    .rotate-message {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+      text-align: center;
+      font-size: 24px;
+    }
+    .custom-car-img {
+      position: absolute;
+      left: 100px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 200px;
+      height: 150px;
+      object-fit: contain;
+      z-index: 5;
+    }
+    .obstacle-car {
+      width: 100px;
+      height: 50px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>404 - Page Not Found</h1>
+    <p>Drive and dodge! Use UP and DOWN arrows to steer</p>
+  </div>
+  <div class="score">Distance: 0.00 km | Best: 0.00 km</div>
+  <div class="rotate-message" style="display: none;">Please rotate your device to landscape mode</div>
+  <div class="press-msg" id="pressMsg">Press any arrow key to Start</div>
+  <canvas id="gameCanvas"></canvas>
+  <img src="car.gif" class="custom-car-img" alt="Custom Car" />
+
+  <!-- Custom obstacle car images -->
+  <img id="obstacleCar1" class="obstacle-car" src="akhilesh.gif" style="display: none;" />
+  <img id="obstacleCar2" class="obstacle-car" src="praful.gif" style="display: none;" />
+  <img id="obstacleCar3" class="obstacle-car" src="sumeet.gif" style="display: none;" />
+  <img id="obstacleCar4" class="obstacle-car" src="Yash.gif" style="display: none;" />
+
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+    const scoreDisplay = document.querySelector(".score");
+    const pressMsg = document.getElementById("pressMsg");
+    const customCarImg = document.querySelector(".custom-car-img");
+
+    const obstacleCarImages = [
+      document.getElementById("obstacleCar1"),
+      document.getElementById("obstacleCar2"),
+      document.getElementById("obstacleCar3"),
+      document.getElementById("obstacleCar4")
+    ];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      customCarImg.style.top = (canvas.height * 0.5 - 25) + "px";
+    }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
+
+    let roadHeight = canvas.height * 0.6;
+    let roadY = (canvas.height - roadHeight) / 2;
+
+    let car = {
+      x: 100,
+      y: roadY + roadHeight / 2 - 25,
+      width: 100,
+      height: 50,
+      speed: 3
+    };
+
+    let keys = { up: false, down: false, right: false };
+    let obstacles = [];
+    let obstacleSpeed = 2.5;
+    let frame = 0;
+    let crashed = false;
+    let gameStarted = false;
+    let distance = 0;
+    let bestScore = localStorage.getItem("bestDistance") || 0;
+    let shakeTime = 0;
+    let laneOffset = 0;
+
+    document.addEventListener("keydown", e => {
+      if ((e.ctrlKey && e.key === 'r') || (e.metaKey && e.key === 'r')) {
+        e.preventDefault();
+        location.reload();
+      }
+      if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) {
+        if (!gameStarted) {
+          pressMsg.style.display = "none";
+          gameStarted = true;
+          crashed = false;
+          distance = 0;
+          obstacles = [];
+          car.y = roadY + roadHeight / 2 - 25;
+          shakeTime = 0;
+          update();
+        }
+      }
+      if (e.key === "ArrowUp") keys.up = true;
+      if (e.key === "ArrowDown") keys.down = true;
+      if (e.key === "ArrowRight") keys.right = true;
+    });
+
+    document.addEventListener("keyup", e => {
+      if (e.key === "ArrowUp") keys.up = false;
+      if (e.key === "ArrowDown") keys.down = false;
+      if (e.key === "ArrowRight") keys.right = false;
+    });
+
+    function drawCar() {
+      customCarImg.style.top = car.y + "px";
+    }
+
+    function drawObstacles() {
+      for (let obs of obstacles) {
+        ctx.drawImage(obs.image, obs.x, obs.y, obs.width, obs.height);
+      }
+    }
+
+    function drawLaneLines() {
+      ctx.strokeStyle = "#fff";
+      ctx.lineWidth = 6;
+      ctx.setLineDash([60, 40]);
+      ctx.lineDashOffset = laneOffset;
+
+      ctx.beginPath();
+      for (let i = 1; i < 3; i++) {
+        let y = roadY + (i * roadHeight) / 3;
+        ctx.moveTo(0, y);
+        ctx.lineTo(canvas.width, y);
+      }
+      ctx.stroke();
+      ctx.setLineDash([]);
+    }
+
+    function updateObstacles(speed) {
+      for (let obs of obstacles) {
+        obs.x -= speed;
+      }
+      obstacles = obstacles.filter(o => o.x + o.width > 0);
+
+      if (frame % 90 === 0) {
+        const obsY = roadY + Math.random() * (roadHeight - 50);
+        const image = obstacleCarImages[Math.floor(Math.random() * obstacleCarImages.length)];
+        const obsWidth = 150;
+        const obsHeight = 100;
+        obstacles.push({ x: canvas.width, y: obsY, width: obsWidth, height: obsHeight, image });
+      }
+    }
+
+    function detectCollision() {
+      for (let obs of obstacles) {
+        if (
+          car.x < obs.x + obs.width &&
+          car.x + car.width > obs.x &&
+          car.y < obs.y + obs.height &&
+          car.y + car.height > obs.y
+        ) {
+          return true;
+        }
+      }
+      return false;
+    }
+
+    function update() {
+      if (crashed) return;
+
+      let currentObstacleSpeed = keys.right ? obstacleSpeed * 1.5 : obstacleSpeed;
+
+      if (shakeTime > 0) {
+        const dx = Math.random() * 10 - 5;
+        const dy = Math.random() * 10 - 5;
+        ctx.save();
+        ctx.translate(dx, dy);
+        shakeTime--;
+      }
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#333";
+      ctx.fillRect(0, roadY, canvas.width, roadHeight);
+
+      laneOffset += currentObstacleSpeed;
+      drawLaneLines();
+
+      if (keys.up && car.y > roadY) car.y -= car.speed;
+      if (keys.down && car.y + car.height < roadY + roadHeight) car.y += car.speed;
+
+      drawCar();
+      updateObstacles(currentObstacleSpeed);
+      drawObstacles();
+
+      let distanceGain = 1 / (60 * 60);
+      distance += keys.right ? distanceGain * 1.5 : distanceGain;
+
+      scoreDisplay.textContent = `Distance: ${distance.toFixed(2)} km | Best: ${parseFloat(bestScore).toFixed(2)} km`;
+
+      if (detectCollision()) {
+        crashed = true;
+        shakeTime = 15;
+        ctx.fillStyle = "rgba(0,0,0,0.7)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = "white";
+        ctx.font = "30px Arial";
+        ctx.fillText("Crashed!", canvas.width / 2 - 60, canvas.height / 2 - 120);
+        pressMsg.textContent = "Press any arrow key to Retry";
+        pressMsg.style.display = "block";
+        if (distance > bestScore) {
+          localStorage.setItem("bestDistance", distance);
+        }
+        gameStarted = false;
+        return;
+      }
+
+      if (shakeTime > 0) {
+        ctx.restore();
+      }
+
+      frame++;
+      requestAnimationFrame(update);
+    }
+
+    function checkOrientation() {
+      const isPortrait = window.innerHeight > window.innerWidth;
+      document.querySelector('.rotate-message').style.display = isPortrait ? 'flex' : 'none';
+    }
+
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+      checkOrientation();
+    });
+
+    checkOrientation();
+  </script>
+</body>
+</html>
