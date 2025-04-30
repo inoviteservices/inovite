@@ -1,5 +1,6 @@
 // src/components/Footer.jsx
 import React from 'react';
+import logo from '../assets/img/inovite-logo-web.png';
 
 const Footer = () => {
   return (
@@ -12,7 +13,7 @@ const Footer = () => {
               <div className="stg-col-5 stg-tp-col-12 stg-tp-bottom-gap-l">
                 <div className="bringer-info-widget">
                   <a href="index-2.html" className="bringer-logo footer-logo">
-                    <img src="src\assets\img\inovite-logo-web.png" alt="bringer." width="88" height="24" />
+                    <img src= {logo} alt="inovite" width="88" height="24" />
                   </a>
                   <div className="bringer-info-description">
                     We are a passionate team of developers and designers who believe in the power of creativity. We help creative people create a strong online presence that shows their work and tells a story.
