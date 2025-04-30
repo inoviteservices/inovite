@@ -1,6 +1,12 @@
 import React from 'react';
 import TeamSection from '../compononts/TeamSection';  
 
+import aboutus1 from '../assets/img/home/home04-hero1.jpg';
+import aboutus2 from '../assets/img/inner-pages/contacts04.jpg';
+import aboutus3 from '../assets/img/cta/grid-cta-background.jpg';
+import aboutus4 from '../assets/img/cta/grid-cta-02.jpg';
+
+
 const About = () => {
   return (
     <div className="stg-container">
@@ -11,7 +17,7 @@ const About = () => {
       <section className="divider-bottom">
       <div className="bringer-static-image">
   <img
-    src="src\assets\img\home\home04-hero1.jpg"
+    src= {aboutus1}
     alt="About Bringer"
     width="1920"
     height="960"
@@ -97,7 +103,7 @@ const About = () => {
           <div className="bringer-parallax-media">
           <img
     className="bringer-image"
-    src="src\assets\img\inner-pages\contacts04.jpg"
+    src= {aboutus2}
     alt="About Us"
     width="960"
     height="960"
@@ -215,7 +221,7 @@ const About = () => {
         >
           <div
             className="bringer-grid-cta-media bringer-masked-media"
-            data-bg-src="src/assets/img/cta/grid-cta-background.jpg"
+            data-bg-src= {aboutus3}
           >
             <div className="bringer-grid-cta-heading">
               Need to amplify your voice?
@@ -258,7 +264,7 @@ const About = () => {
           data-unload="zoom-out"
         >
           <img
-            src="src/assets/img/cta/grid-cta-02.jpg"
+            src= {aboutus4}
             alt="Let's Chat"
             width="960"
             height="960"
