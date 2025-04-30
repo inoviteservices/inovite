@@ -2,6 +2,10 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import rajImage from '../assets/img/about/raj.jpg';
+import sanketImage from '../assets/img/about/sanket.jpg';
+import riddhishImage from '../assets/img/about/riddhish.jpg';
+import prafulImage from '../assets/img/about/praful.jpg';
+import akhileshImage from '../assets/img/about/akhilesh.jpg';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -10,13 +14,13 @@ const teamMembers = [
   {
     name: 'Sanket Ingle',
     role: 'Co-Founder',
-    image: rajImage,
+    image: sanketImage,
     link: 'team-member.html',
   },
   {
     name: 'Riddhish Joshi',
     role: 'Co-Founder',
-    image: rajImage,
+    image: riddhishImage,
     link: 'team-member.html',
   },
   {
@@ -28,13 +32,13 @@ const teamMembers = [
   {
     name: 'Prafful Nadhe',
     role: 'CFO',
-    image: rajImage,
+    image: prafulImage,
     link: 'team-member.html',
   },
   {
-    name: 'Prafful Nadhe',
+    name: 'Akhilesh Kokil',
     role: 'CFO, Co-Founder',
-    image: rajImage,
+    image: akhileshImage,
     link: 'team-member.html',
   },
   
