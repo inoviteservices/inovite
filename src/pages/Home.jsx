@@ -1,8 +1,8 @@
 // src/pages/Home.jsx
 import React from 'react';
-import logo from '../assets/img/inovite-logo-web.png';
 import video from '../assets/video/home03.mp4';
-import poster from '../assets/img/home/3dlogo.gif';
+import poster from '../assets/img/home/home03-hero2.jpg';
+import gif from '../assets/img/home/3dlogo.gif';
 import about1 from '../assets/img/inner-pages/contacts04.jpg';
 import about2 from '../assets/img/inner-pages/contacts03.jpg';
 import service1 from '../assets/img/home/service01.jpg';
@@ -23,7 +23,7 @@ const Home = () => {
             {/* Additional Media */}
             <div className="stg-m-hide" data-appear="fade-left" data-unload="fade-right">
             <img 
-    src= {logo}
+    src= {gif}
     alt="Inovite" 
     width="550" 
     height="200" 
