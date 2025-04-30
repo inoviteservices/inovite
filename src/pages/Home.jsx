@@ -15,7 +15,7 @@ const Home = () => {
             {/* Additional Media */}
             <div className="stg-m-hide" data-appear="fade-left" data-unload="fade-right">
             <img 
-    src="src/assets/img/home/3d logo.gif" 
+    src="https://github.com/inoviteservices/inovite/blob/main/src/assets/img/inovite-logo-web.png" 
     alt="Inovite" 
     width="550" 
     height="200" 
