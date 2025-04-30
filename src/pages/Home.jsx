@@ -1,5 +1,9 @@
 // src/pages/Home.jsx
 import React from 'react';
+import logo from '../assets/img/inovite-logo-web.png';
+import video from 'src/assets/video/home03.mp4'
+import poster from 'src/assets/img/home/home03-hero2.jpg'
+
 
 const Home = () => {
   return (
@@ -15,7 +19,7 @@ const Home = () => {
             {/* Additional Media */}
             <div className="stg-m-hide" data-appear="fade-left" data-unload="fade-right">
             <img 
-    src="https://github.com/inoviteservices/inovite/blob/main/src/assets/img/inovite-logo-web.png" 
+    src= {logo}
     alt="Inovite" 
     width="550" 
     height="200" 
@@ -33,7 +37,7 @@ const Home = () => {
           <div className="bringer-hero-media-wrap bringer-masked-block">
             {/* Masked Media */}
             <div className="bringer-hero-media bringer-masked-media" data-appear="fade-right" data-unload="fade-left" data-delay="150" data-threshold="0">
-              <video src="src/assets/video/home03.mp4" poster="src/assets/img/home/home03-hero2.jpg" playsInline muted loop autoPlay />
+              <video src= {video} poster= {poster} playsInline muted loop autoPlay />
             </div>
             {/* Content */}
             <div className="bringer-hero-media-content bringer-masked-content at-top-right">

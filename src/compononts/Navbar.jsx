@@ -70,7 +70,7 @@ const Navbar = () => {
       {/* Mobile Header */}
       <div className="bringer-mobile-header-inner">
         <NavLink to="/" className="bringer-logo">
-          <img src="src/assets/img/inovite-logo-web.png" alt="inovite" width="88" height="24" />
+          <img src= {logo} alt="inovite" width="88" height="24" />
         </NavLink>
         <a href="#" className="bringer-mobile-menu-toggler">
           <i className="bringer-menu-toggler-icon">
