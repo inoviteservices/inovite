@@ -2,8 +2,12 @@
 import React from 'react';
 import logo from '../assets/img/inovite-logo-web.png';
 import video from '../assets/video/home03.mp4';
-import poster from '../assets/img/home/home03-hero2.jpg';
-
+import poster from '../assets/img/home/3d%20logo.gif';
+import about1 from '../assets/img/inner-pages/contacts04.jpg';
+import about2 from '../assets/img/inner-pages/contacts03.jpg';
+import service1 from '../assets/img/home/service01.jpg';
+import service2 from '../assets/img/home/service02.jpg';
+import service3 from '../assets/img/home/service03.jpg';
 
 const Home = () => {
   return (
@@ -95,7 +99,7 @@ const Home = () => {
           <div className="bringer-parallax-media">
   <img
     className="bringer-image"
-    src="src/assets/img/inner-pages/contacts04.jpg"
+    src= {about1}
     alt="About Us"
     width="960"
     height="960"
@@ -117,8 +121,7 @@ const Home = () => {
           <div className="bringer-parallax-media">
           <img
     className="bringer-image"
-    src="src\assets\img\inner-pages\contacts03.jpg
-"
+    src= {about2}
     alt="About Us"
     width="960"
     height="960"
@@ -189,7 +192,7 @@ const Home = () => {
         <div className="bringer-lwp-roster">
           {/* Item 01 */}
           <div className="bringer-lwp-item bringer-block" data-appear="fade-left">
-            <img src="src\assets\img/home/service01.jpg" alt="Branding" width="800" height="1200" />
+            <img src= {service1} alt="Branding" width="800" height="1200" />
             <div className="bringer-lwp-item-content">
               <h5>Branding<span className="bringer-accent">.</span></h5>
               <p>
@@ -200,7 +203,7 @@ const Home = () => {
 
           {/* Item 02 */}
           <div className="bringer-lwp-item bringer-block" data-appear="fade-left">
-            <img src="src\assets\img/home/service02.jpg" alt="Marketing" width="800" height="1200" />
+            <img src= {service2} alt="Marketing" width="800" height="1200" />
             <div className="bringer-lwp-item-content">
               <h5>Marketing<span className="bringer-accent">.</span></h5>
               <p>
@@ -211,7 +214,7 @@ const Home = () => {
 
           {/* Item 03 */}
           <div className="bringer-lwp-item bringer-block" data-appear="fade-left">
-            <img src="src/assets/img/home/service03.jpg" alt="Web Design" width="800" height="1200" />
+            <img src= {service3} alt="Web Design" width="800" height="1200" />
             <div className="bringer-lwp-item-content">
               <h5>Web Design<span className="bringer-accent">.</span></h5>
               <p>
