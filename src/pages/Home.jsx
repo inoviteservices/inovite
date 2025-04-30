@@ -1,8 +1,8 @@
 // src/pages/Home.jsx
 import React from 'react';
 import logo from '../assets/img/inovite-logo-web.png';
-import video from 'src/assets/video/home03.mp4'
-import poster from 'src/assets/img/home/home03-hero2.jpg'
+import video from 'src/assets/video/home03.mp4';
+import poster from 'src/assets/img/home/home03-hero2.jpg';
 
 
 const Home = () => {
