@@ -15,8 +15,8 @@ const Home = () => {
             {/* Additional Media */}
             <div className="stg-m-hide" data-appear="fade-left" data-unload="fade-right">
             <img 
-    src="src\assets\img\home\3d logo.gif" 
-    alt="Bringer" 
+    src="src/assets/img/home/3d logo.gif" 
+    alt="Inovite" 
     width="550" 
     height="200" 
     style={{
@@ -33,7 +33,7 @@ const Home = () => {
           <div className="bringer-hero-media-wrap bringer-masked-block">
             {/* Masked Media */}
             <div className="bringer-hero-media bringer-masked-media" data-appear="fade-right" data-unload="fade-left" data-delay="150" data-threshold="0">
-              <video src="src\assets\video\home03.mp4" poster="src\assets\img\home\home03-hero2.jpg" playsInline muted loop autoPlay />
+              <video src="src/assets/video/home03.mp4" poster="src/assets/img/home/home03-hero2.jpg" playsInline muted loop autoPlay />
             </div>
             {/* Content */}
             <div className="bringer-hero-media-content bringer-masked-content at-top-right">
@@ -91,7 +91,7 @@ const Home = () => {
           <div className="bringer-parallax-media">
   <img
     className="bringer-image"
-    src="src\assets\img\inner-pages\contacts04.jpg"
+    src="src/assets/img/inner-pages/contacts04.jpg"
     alt="About Us"
     width="960"
     height="960"
