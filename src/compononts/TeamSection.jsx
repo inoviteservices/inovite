@@ -31,13 +31,13 @@ const teamMembers = [
   },
   {
     name: 'Prafful Nadhe',
-    role: 'CFO',
+    role: 'Chief Financial Officer',
     image: prafulImage,
     link: 'team-member.html',
   },
   {
     name: 'Akhilesh Kokil',
-    role: 'CFO, Co-Founder',
+    role: 'Senior Data Scientist',
     image: akhileshImage,
     link: 'team-member.html',
   },
