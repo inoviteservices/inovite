@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import logo from '../assets/img/inovite-logo-web.png';  // Adjust the relative path based on your folder structure
 
 
 const Navbar = () => {
@@ -11,7 +10,7 @@ const Navbar = () => {
         {/* Header Logo */}
         <div className="bringer-header-lp">
           <NavLink to="/" className="bringer-logo">
-            <img src= {logo} alt="inovite" width="88" height="24" />
+            <img src= "/assets/img/inovite-logo-web.png" alt="inovite" width="88" height="24" />
           </NavLink>
         </div>
 
