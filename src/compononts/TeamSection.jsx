@@ -11,16 +11,17 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const teamMembers = [
-  {
-    name: 'Sanket Ingle',
-    role: 'Co-Founder',
-    image: sanketImage,
-    link: 'team-member.html',
-  },
+  
   {
     name: 'Riddhish Joshi',
     role: 'Co-Founder',
     image: riddhishImage,
+    link: 'team-member.html',
+  },
+  {
+    name: 'Sanket Ingle',
+    role: 'Co-Founder',
+    image: sanketImage,
     link: 'team-member.html',
   },
   {
