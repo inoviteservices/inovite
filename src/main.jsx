@@ -10,10 +10,8 @@ import './assets/css/stg.css'; // Import your CSS file here
 import './assets/css/libs.css'; // Import your CSS file here
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
   <BrowserRouter>
     <App />
   </BrowserRouter>
-  </React.StrictMode>
 
 );
