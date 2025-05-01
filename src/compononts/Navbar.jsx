@@ -72,13 +72,13 @@ const Navbar = () => {
         <NavLink to="/" className="bringer-logo">
           <img src= {logo} alt="inovite" width="88" height="24" />
         </NavLink>
-        <button  className="bringer-mobile-menu-toggler" onClick={toggleMobileMenu} aria-label="Toggle menu">
+        <a href="#" className="bringer-mobile-menu-toggler">
           <i className="bringer-menu-toggler-icon">
             <span></span>
             <span></span>
             <span></span>
           </i>
-        </button>
+        </a>
       </div>
     </header>
   );
