@@ -10,6 +10,7 @@ const Career = () => {
     resume_link: '',
     internship_interest: '',
     skills_known: '',
+    custom_interest: '',
   });
 
   const [loading, setLoading] = useState(false);
@@ -17,7 +18,6 @@ const Career = () => {
 
   const internshipRoles = [
     'Web Development',
-    'App Development',
     'Data Analytics / Data Science',
     'Automation / Scripting',
     'Need Guidance Choosing a Role',
@@ -32,9 +32,14 @@ const Career = () => {
     e.preventDefault();
     setLoading(true);
 
+    const finalFormData = {
+      ...formData,
+      internship_interest: formData.custom_interest || formData.internship_interest,
+    };
+
     try {
-      await axios.post('https://inovite.pythonanywhere.com/api/submit/', formData);
-      alert(`🚀 Successfully applied for the ${formData.internship_interest} internship! We’ll get in touch soon.`);
+      await axios.post('https://inovite.pythonanywhere.com/api/submit/', finalFormData);
+      alert(`Successfully applied for the ${finalFormData.internship_interest} internship! We’ll get in touch soon.`);
       setFormData({
         name: '',
         email: '',
@@ -43,6 +48,7 @@ const Career = () => {
         resume_link: '',
         internship_interest: '',
         skills_known: '',
+        custom_interest: '',
       });
       setShowForm(false);
     } catch (error) {
@@ -56,33 +62,38 @@ const Career = () => {
   return (
     <div className="stg-container">
       <style>{`
-    .internship-button-group {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-bottom: 1rem;
-    }
+        .internship-button-group {
+          display: flex;
+          gap: 1rem;
+          flex-wrap: wrap;
+          margin-bottom: 1rem;
+        }
 
-    .internship-btn {
-      padding: 10px 18px;
-      border: 1px solid #999;
-      background: #fff;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: 0.2s;
-    }
+        .internship-btn {
+          padding: 10px 18px;
+          border: 1px solid #999;
+          background: #fff;
+          border-radius: 6px;
+          cursor: pointer;
+          transition: 0.2s;
+        }
 
-    .internship-btn:hover,
-    .internship-btn.selected {
-      background: #1a1a1a;
-      color: #fff;
-      border-color: #1a1a1a;
-    }
-  `}</style>
+        .internship-btn:hover,
+        .internship-btn.selected {
+          background: #1a1a1a;
+          color: #fff;
+          border-color: #1a1a1a;
+        }
+
+        input[type="text"], input[type="email"], input[type="url"] {
+          margin-bottom: 1rem;
+        }
+      `}</style>
+
       <section id="internships">
         <div className="align-center stg-bottom-gap-l">
           <h2>Join Inovite: Career Tracks</h2>
-          <p><strong>Explore the path that fits you best:</strong></p>
+          <p><strong>Pick the track that excites you most:</strong></p>
         </div>
 
         {!showForm && (
@@ -164,13 +175,41 @@ const Career = () => {
                         setFormData((prev) => ({
                           ...prev,
                           internship_interest: role,
+                          custom_interest: '',
                         }))
                       }
                     >
                       {role}
                     </button>
                   ))}
+                  <button
+                    type="button"
+                    className={`internship-btn ${formData.internship_interest === 'Other' ? 'selected' : ''}`}
+                    onClick={() =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        internship_interest: 'Other',
+                      }))
+                    }
+                  >
+                    Other
+                  </button>
                 </div>
+
+                {formData.internship_interest === 'Other' && (
+                  <input
+                    type="text"
+                    placeholder="Tell us your interest..."
+                    value={formData.custom_interest}
+                    onChange={(e) =>
+                      setFormData((prev) => ({
+                        ...prev,
+                        custom_interest: e.target.value,
+                      }))
+                    }
+                    required
+                  />
+                )}
 
                 <label>Skills Known</label>
                 <input
