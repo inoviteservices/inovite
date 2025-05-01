@@ -16,9 +16,11 @@ const Career = () => {
   const [showForm, setShowForm] = useState(false);
 
   const internshipRoles = [
-    'Web Developer Intern',
-    'Data Analyst Intern',
-    'UI/UX Designer Intern',
+    'Web Development',
+    'App Development',
+    'Data Analytics / Data Science',
+    'Automation / Scripting',
+    'Need Guidance Choosing a Role',
   ];
 
   const handleChange = (e) => {
@@ -151,7 +153,7 @@ const Career = () => {
                   required
                 />
 
-                <label>Choose Your Internship</label>
+                <label>What Excites You Most?</label>
                 <div className="internship-button-group">
                   {internshipRoles.map((role, index) => (
                     <button
