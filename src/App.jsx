@@ -4,13 +4,15 @@ import { Routes, Route } from 'react-router-dom'; // Import Routes and Route fro
 import Navbar from './compononts/Navbar';
 import Footer from './compononts/Footer';
 import Contact from './pages/Contact';
+import BlogDetail from './compononts/BlogDetail';
+
 
 import Home from './pages/Home';
 import About from './pages/About';  
 import Services from './pages/Services';
 import Career from './pages/Career';
 // import Jobs from './pages/Jobs';
-// import Blogs from './pages/Blogs';  
+import Blogs from './pages/Blogs';  
 import Internships from './pages/Internships';
 // import './assets/styles/main.css';
 import 'swiper/css';
@@ -30,6 +32,8 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/career" element={<Career />} />
         <Route path="/internships" element={<Internships />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
 
 
         {/* Add other routes here */}

@@ -22,7 +22,7 @@ const Footer = () => {
                   <ul className="bringer-socials-list" data-stagger-appear="fade-up" data-stagger-delay="75">
                     <li><a href="https://www.facebook.com/share/16D9y75g4f/?mibextid=wwXIfr" target="_blank" className="bringer-socials-facebook"><i></i></a></li>
                     <li><a href="https://instagram.com/inovite.in" target="_blank" className="bringer-socials-instagram"><i></i></a></li>
-                    <li><a href="https://twitter.com/inovite" target="_blank" className="bringer-socials-x"><i></i></a></li>
+                    <li><a href="https://twitter.com/InoviteServices" target="_blank" className="bringer-socials-x"><i></i></a></li>
                     <li><a href="https://linkedin.com/company/inovite-services" target="_blank" className="bringer-socials-linkedin"><i></i></a></li>
                     <li><a href="https://youtube.com/@inovite" target="_blank" className="bringer-socials-youtube"><i></i></a></li>
                   </ul>
