@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';  // Import Link from react-router-dom
+import defaultblogimage from '../assets/img/blog/blog.jpeg';
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -38,12 +39,17 @@ const Blogs = () => {
                 data-appear="fade-right"
               >
                 <div className="bringer-parallax-media">
-                  <img
-                    src={blog.image_path || "..\assets\img\blog\blog.jpeg"}
-                    alt={blog.title}
-                    width="960"
-                    height="960"
-                  />
+                <img
+  src={blog.image_path}
+  alt={blog.title}
+  width="960"
+  height="960"
+  onError={(e) => {
+    e.target.onerror = null;
+    e.target.src = defaultblogimage;
+  }}
+/>
+
                 </div>
               </div>
 
