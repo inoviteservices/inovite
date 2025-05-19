@@ -106,12 +106,14 @@ const Career = () => {
             </div>
             <div
               className="bringer-role-card bringer-block"
-              onClick={() => setShowForm(true)}
+              // onClick={() => setShowForm(true)}
+              onClick={() => alert('🚫 Internship positions are currently filled. Please check back later!')}
             >
               <h4>Internships</h4>
             </div>
           </div>
         )}
+        
 
         {showForm && (
           <div className="bringer-job-apply-wrapper bringer-block mt-5">
