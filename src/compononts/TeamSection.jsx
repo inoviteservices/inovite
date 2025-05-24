@@ -31,7 +31,7 @@ const teamMembers = [
     link: 'team-member.html',
   },
   {
-    name: 'Prafful Nadhe',
+    name: 'Praful Nadhe',
     role: 'Chief Financial Officer',
     image: prafulImage,
     link: 'team-member.html',
