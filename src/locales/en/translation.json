@@ -1,0 +1,295 @@
+{
+  "header": {
+    "letsBuildTogether": "Let's Build Together"
+  },
+  "menu": {
+    "services": "Services",
+    "industries": "Industries",
+    "discover": "Discover",
+    "company": "Company",
+    "careers": "Careers",
+    "softwareDevelopment": "Software Development",
+    "softwareConsulting": "Software Consulting",
+    "erpSoftware": "ERP Software Development",
+    "customCRM": "Custom CRM Development",
+    "arVrDevelopment": "AR/VR Development",
+    "iotDevelopment": "IoT Development",
+    "microservices": "Microservices",
+    "productDevelopment": "Product Development",
+    "maintenanceSupport": "Maintenance & Support",
+    "applicationDevelopment": "Application Development",
+    "webApplication": "Web Application",
+    "customApplication": "Custom Application",
+    "applicationModernization": "Application Modernization",
+    "applicationManagement": "Application Management",
+    "applicationMaintenance": "Application Maintenance",
+    "cloudApplication": "Cloud Application",
+    "applicationIntegration": "Application Integration",
+    "ecommerceApplication": "Ecommerce Application",
+    "otherServices": "Other Services",
+    "mobileAppDevelopment": "Mobile App Development",
+    "hireDevelopers": "Hire Dedicated Developers",
+    "fullStackDevelopment": "Full Stack Development",
+    "saasDevelopment": "SaaS Development",
+    "artificialIntelligence": "Artificial Intelligence",
+    "dataAnalytics": "Data Analytics",
+    "businessIntelligence": "Business Intelligence",
+    "uxUiDesign": "UX/UI Design",
+    "businessServices": "Business & Services",
+    "retail": "Retail",
+    "healthcare": "Healthcare",
+    "ecommerce": "E-commerce",
+    "education": "Education / eLearning",
+    "manufacturing": "Manufacturing",
+    "realEstate": "Real Estate",
+    "logistics": "Logistics & Distribution",
+    "fintech": "Fintech",
+    "lifestyleOnDemand": "Lifestyle & On-Demand",
+    "restaurantApp": "Restaurant App",
+    "beautyLifestyle": "Beauty & Lifestyle",
+    "travelHospitality": "Travel & Hospitality",
+    "fitnessApp": "Fitness App",
+    "socialMediaApp": "Social Media App",
+    "beautyServicesApp": "Beauty Services App",
+    "onDemandApp": "On-Demand App",
+    "downloadEbook": "Download Ebook",
+    "featured": "Featured",
+    "visionRoadmap": "Vision & Roadmap",
+    "collaborationModels": "Collaboration Models",
+    "resources": "Resources",
+    "stories": "Stories",
+    "caseStudy": "Case Study",
+    "news": "News",
+    "blog": "Blog",
+    "teamExtension": "Team Extension",
+    "howWeWork": "How We Work",
+    "aboutUs": "About Us",
+    "startup": "Startup",
+    "contactUs": "Contact Us",
+    "internship": "Internship",
+    "jobs": "Jobs",
+    "techRoles": "Tech Roles",
+    "nonTechRoles": "Non-Tech Roles"
+  },
+  "home": {
+    "hero": {
+      "title": "Bring your creative ideas into reality!",
+      "description": "We help creative agencies, designers, and other creative people showcase their work and connect with clients."
+    },
+    "about": {
+      "title": "We are passionate team of designers and developers.",
+      "subtitle": "We are a passionate team of designers and developers who believe in the power of creativity.",
+      "description": "We are a team of passionate and experienced designers, developers, and marketers who specialize in helping businesses of all sizes achieve their goals. We believe that creativity is the key to success, and we are committed to helping our clients unleash their full potential.",
+      "linkTitle": "We are Passionate Team",
+      "linkLabel": "Learn More About Us"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "We offer a wide range of creative services to help businesses of all sizes achieve their goals. Our services include:",
+      "discoverAll": "Discover all services",
+      "branding": {
+        "title": "Branding",
+        "alt": "Branding",
+        "description": "We weave visual stories and craft strategic messaging that resonate at heartstrings, build unwavering trust, and turn customers into fervent brand champions."
+      },
+      "marketing": {
+        "title": "Marketing",
+        "alt": "Marketing",
+        "description": "We design data-driven campaigns that crackle with energy, ignite engagement like wildfire, and turn clicks into conversions. We're the storm that promote your brand."
+      },
+      "webDesign": {
+        "title": "Web Design",
+        "alt": "Web Design",
+        "description": "We sculpt user-friendly websites that convert visitors into loyal devotees with intuitive navigation and flawless experiences for every screen. We craft that digital haven."
+      },
+      "graphicDesign": {
+        "title": "Graphic Design",
+        "alt": "Graphic Design",
+        "description": "We craft visual masterpieces that sing your brand's story in vibrant colors and captivating shapes. From logos that lodge in minds to infographics that make complex ideas sing."
+      }
+    },
+    "tags": {
+      "graphicDesign": "Graphic Design",
+      "contentCreation": "Content Creation",
+      "branding": "Branding",
+      "marketing": "Marketing",
+      "webDesign": "Web Design"
+    },
+    "whyChoose": {
+      "title": "Why Choose Us",
+      "subtitle": "We are a passionate team of designers and developers who believe in the power of creativity. We help creative professionals create a strong online presence that showcases their work and tells their story.",
+      "learnMore": "Learn More About Us",
+      "point1": {
+        "title": "We don't just design, we <accent>unleash creative</accent> firestorms<accent>.</accent>",
+        "description": "Tired of bland marketing and cookie-cutter websites? We infuse your brand with bold ideas and strategic brilliance, igniting campaigns that capture hearts and drive tangible results. Forget sparklers, we're here to light galaxies on fire."
+      },
+      "point2": {
+        "title": "We <accent>fuel creativity</accent> with data, guide passion with precision<accent>.</accent>",
+        "description": "We're not just artistic dreamers, we're strategic alchemists. We blend data-driven insights with unbridled passion, ensuring your campaigns reach the right audience, hit the right chords, and deliver measurable results. Because passion without direction is a beautiful mess."
+      },
+      "point3": {
+        "title": "We craft <accent>emotional connections</accent>, not just visuals and copy<accent>.</accent>",
+        "description": "We delve deeper than pixels and prose. We understand the human heart, the language of emotions. We weave stories that resonate, visuals that linger in minds, and content that sparks conversations. Because true connection is the foundation of brand loyalty."
+      },
+      "point4": {
+        "title": "We don't just work with you, we become your <accent>creative champions</accent><accent>.</accent>",
+        "description": "We don't see clients, we see collaborators. We believe in building partnerships, in understanding your vision, and becoming an extension of your team. Your goals are our canvas, your success our masterpiece. We paint your dreams into reality, together."
+      }
+    },
+    "partners": {
+      "label": "Trusted by Industry Leaders"
+    },
+    "portfolio": {
+      "title": "Our Work",
+      "subtitle": "We are proud of our work, and we are always looking for new challenges. Take a look at some of our recent portfolio:",
+      "discoverFull": "Discover Full Portfolio"
+    },
+    "testimonials": {
+      "title": "What Clients Say",
+      "subtitle": "Here are some of the most inspiring reviews from our clients. Your opinion is very important to us 'cause we have always try to evolve and improve in the professional field and work on mistakes.",
+      "readAll": "Read all Testimonials"
+    },
+    "cta": {
+      "title": "Ready to set your Brand ablaze?",
+      "subtitle": "Let's craft a visual identity that ignites passion and loyalty. ✨",
+      "placeholder": "email@example.com",
+      "thankYou": "Thank you for subscribing!",
+      "error": "There was an error. Please try again later.",
+      "fillForm": "Please, fill out the form.",
+      "submissionIssue": "There was an issue with your submission. Please try again."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  },
+  "footer": {
+    "company": {
+      "description": "We are a passionate team of developers and designers who believe in the power of creativity. We help creative people create a strong online presence that shows their work and tells a story."
+    },
+    "followUs": "Follow Us:",
+    "copyright": "© {{year}} {{company}}. All Rights Reserved.",
+    "widgets": {
+      "services": {
+        "title": "Services",
+        "links": {
+          "branding": "Branding",
+          "marketing": "Marketing",
+          "graphicDesign": "Graphic Design",
+          "webDesign": "Web Design",
+          "contentCreation": "Content Creation"
+        }
+      },
+      "aboutUs": {
+        "title": "About Us",
+        "links": {
+          "aboutUs": "About Us",
+          "aboutMe": "About Me",
+          "ourTeam": "Our Team",
+          "testimonials": "Testimonials",
+          "getInTouch": "Get in Touch"
+        }
+      },
+      "resources": {
+        "title": "Resources",
+        "links": {
+          "pricing": "Pricing",
+          "helpCenter": "Help Center",
+          "ourServices": "Our Services",
+          "termsOfUse": "Terms of Use",
+          "privacyPolicy": "Privacy Policy"
+        }
+      }
+    }
+  },
+
+  "internship": {
+    "title": "Internship Application",
+    "subtitle": "Fill out the form below to apply for an internship.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "college": "College Name",
+      "collegePlaceholder": "Enter your college name",
+      "year": "Graduation Year",
+      "yearPlaceholder": "Enter your graduation year",
+      "course": "Course Name",
+      "coursePlaceholder": "Enter your course name",
+      "resume": "Resume Link",
+      "resumePlaceholder": "Enter a valid URL to your resume",
+      "skills": "Skills",
+      "skillsPlaceholder": "List your skills (comma separated)",
+      "submit": "Submit Application",
+      "successMessage": "Your internship application was submitted successfully!",
+      "validation": {
+        "nameRequired": "Name is required",
+        "emailInvalid": "Please enter a valid email address",
+        "emailRequired": "Email is required",
+        "collegeRequired": "College name is required",
+        "yearRequired": "Year is required",
+        "yearMin": "Year must be at least 2022",
+        "yearMax": "Year cannot be greater than 2100",
+        "courseRequired": "Course name is required",
+        "resumeInvalid": "Please enter a valid resume URL",
+        "resumeRequired": "Resume link is required",
+        "skillsRequired": "Please list your skills"
+      }
+    }
+  },
+  "contact": {
+    "aboutUsSection": {
+      "title": "Ready to ignite your brand's fire? 🔥 Let's connect! 🤝",
+      "description": "At Inovite, we believe in the power of collaboration and shared passion. We're not just a creative agency, we're your partners in igniting your brand's unique potential. So, whether you're brimming with ideas or just starting to spark, reach out and let's chat!"
+    },
+    "ctaSection": {
+      "title": "Let's discuss your next creative project.",
+      "description": "We help creative agencies, designers, and other creative people showcase their perfect work.",
+      "counters": {
+        "projects": {
+          "number": "420",
+          "label": "Projects Done"
+        },
+        "clients": {
+          "number": "8",
+          "suffix": "K+",
+          "label": "Happy Clients"
+        },
+        "years": {
+          "number": "12",
+          "suffix": "+",
+          "label": "Years in Work"
+        }
+      }
+    },
+    "letsTalk": {
+      "title": "Let's 🗣 talk!",
+      "subtitle": "Here's how you can connect with the Inovite team:",
+      "phone": {
+        "title": "Phone",
+        "subtitle": "+91 74477 06777",
+        "description": "Give us a call and chat directly with our friendly team. We're always happy to answer any questions."
+      },
+      "email": {
+        "title": "Email",
+        "subtitle": "connect@inovite.in",
+        "description": "Send us a detailed message. We'll get back to you as soon as possible to discuss your creative project further."
+      },
+      "social": {
+        "title": "Social Media",
+        "description": "Follow us on Social Media Platforms for a glimpse into our creative world, industry insights, and projects."
+      }
+    },
+    "visitStudio": {
+      "title": "Visit our Studio",
+      "subtitle": "Come visit! We love welcoming potential collaborators into our vibrant space. Schedule a tour and get inspired by our creative energy.",
+      "address": {
+        "title": "Address",
+        "subtitle": "Sonigara Landmark, 110,<br />Chatrapati Chowk Rd,<br />Wakad, Pune",
+        "description": "Drop by our vibrant studio. We'd love to welcome you and share our creative vibe. Let's fuel your vision!"
+      }
+    }
+  }
+}

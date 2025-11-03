@@ -1,0 +1,161 @@
+{
+  "mainMenu": [
+    {
+      "id": 1,
+      "label": "Services",
+      "url": "#",
+      "submenu": [
+        {
+          "id": 11,
+          "label": "Software Development",
+          "url": "#",
+          "submenu": [
+            { "id": 111, "label": "Software Consulting", "url": "#" },
+            { "id": 112, "label": "ERP Software Development", "url": "#" },
+            { "id": 113, "label": "Custom CRM Development", "url": "#" },
+            { "id": 114, "label": "AR/VR Development", "url": "#" },
+            { "id": 115, "label": "IoT Development", "url": "#" },
+            { "id": 116, "label": "Microservices", "url": "#" },
+            { "id": 117, "label": "Product Development", "url": "#" },
+            { "id": 118, "label": "Maintenance & Support", "url": "#" }
+          ]
+        },
+        {
+          "id": 12,
+          "label": "Application Development",
+          "url": "#",
+          "submenu": [
+            { "id": 121, "label": "Web Application", "url": "#" },
+            { "id": 122, "label": "Custom Application", "url": "#" },
+            { "id": 123, "label": "Application Modernization", "url": "#" },
+            { "id": 124, "label": "Application Management", "url": "#" },
+            { "id": 125, "label": "Application Maintenance", "url": "#" },
+            { "id": 126, "label": "Cloud Application", "url": "#" },
+            { "id": 127, "label": "Application Integration", "url": "#" },
+            { "id": 128, "label": "Ecommerce Application", "url": "#" }
+          ]
+        },
+        {
+          "id": 13,
+          "label": "Other Services",
+          "url": "#",
+          "submenu": [
+            { "id": 131, "label": "Mobile App Development", "url": "#" },
+            { "id": 132, "label": "Hire Dedicated Developers", "url": "#" },
+            { "id": 133, "label": "Full Stack Development", "url": "#" },
+            { "id": 134, "label": "SaaS Development", "url": "#" },
+            { "id": 135, "label": "Artificial Intelligence", "url": "#" },
+            { "id": 136, "label": "Data Analytics", "url": "#" },
+            { "id": 137, "label": "Business Intelligence", "url": "#" },
+            { "id": 138, "label": "UX/UI Design", "url": "#" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "label": "Industries",
+      "url": "#",
+      "submenu": [
+        {
+          "id": 21,
+          "label": "Industries",
+          "url": "#",
+          "submenu": [
+            {
+              "id": 211,
+              "label": "Business & Services",
+              "url": "#",
+              "submenu": [
+                { "id": 2111, "label": "Retail", "url": "#" },
+                { "id": 2112, "label": "Healthcare", "url": "#" },
+                { "id": 2113, "label": "E-commerce", "url": "#" },
+                { "id": 2114, "label": "Education / eLearning", "url": "#" },
+                { "id": 2115, "label": "Manufacturing", "url": "#" },
+                { "id": 2116, "label": "Real Estate", "url": "#" },
+                { "id": 2117, "label": "Logistics & Distribution", "url": "#" },
+                { "id": 2118, "label": "Fintech", "url": "#" }
+              ]
+            },
+            {
+              "id": 212,
+              "label": "Lifestyle & On-Demand",
+              "url": "#",
+              "submenu": [
+                { "id": 2121, "label": "Restaurant App", "url": "#" },
+                { "id": 2122, "label": "Beauty & Lifestyle", "url": "#" },
+                { "id": 2123, "label": "Travel & Hospitality", "url": "#" },
+                { "id": 2124, "label": "Fitness App", "url": "#" },
+                { "id": 2125, "label": "Social Media App", "url": "#" },
+                { "id": 2126, "label": "Beauty Services App", "url": "#" },
+                { "id": 2127, "label": "On-Demand App", "url": "#" }
+              ]
+            }
+          ]
+        },
+        { "id": 22, "label": "divider", "url": null },
+        { "id": 23, "label": "Download Ebook", "url": "#" }
+      ]
+    },
+    {
+      "id": 3,
+      "label": "Discover",
+      "url": "#",
+      "submenu": [
+        {
+          "id": 31,
+          "label": "Featured",
+          "url": "#",
+          "submenu": [
+            { "id": 311, "label": "Vision & Roadmap", "url": "#" },
+            { "id": 312, "label": "Collaboration Models", "url": "#" }
+          ]
+        },
+        {
+          "id": 32,
+          "label": "Resources",
+          "url": "#",
+          "submenu": [
+            { "id": 321, "label": "Stories", "url": "#" },
+            { "id": 322, "label": "Case Study", "url": "#" },
+            { "id": 323, "label": "News", "url": "#" },
+            { "id": 324, "label": "Blog", "url": "/blog" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "label": "Company",
+      "url": "#",
+      "submenu": [
+        { "id": 41, "label": "Team Extension", "url": "#" },
+        { "id": 42, "label": "How We Work", "url": "#" },
+        { "id": 43, "label": "About Us", "url": "#" },
+        { "id": 44, "label": "Startup", "url": "#" },
+        { "id": 45, "label": "Contact Us", "url": "/contact" }
+      ]
+    },
+    {
+      "id": 5,
+      "label": "Careers",
+      "url": "#",
+      "submenu": [
+        { "id": 51, "label": "Internship", "url": "/careers/internship" },
+        {
+          "id": 52,
+          "label": "Jobs",
+          "url": "#",
+          "submenu": [
+            { "id": 521, "label": "Tech Roles", "url": "/careers/jobs/tech" },
+            {
+              "id": 522,
+              "label": "Non-Tech Roles",
+              "url": "/careers/jobs/nontech"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

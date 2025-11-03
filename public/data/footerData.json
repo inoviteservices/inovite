@@ -1,0 +1,45 @@
+{
+  "company": {
+    "name": "Inovite Services Pvt. Ltd.",
+    "logo": "/img/logo.png",
+    "socials": [
+      { "platform": "facebook", "url": "https://facebook.com/inovite" },
+      { "platform": "instagram", "url": "https://instagram.com/inovite" },
+      { "platform": "x", "url": "https://x.com/inovite" },
+      { "platform": "tiktok", "url": "https://tiktok.com/@inovite" },
+      { "platform": "patreon", "url": "https://patreon.com/inovite" }
+    ]
+  },
+  "widgets": [
+    {
+      "id": "services",
+      "links": [
+        { "key": "branding", "url": "/services/branding" },
+        { "key": "marketing", "url": "/services/marketing" },
+        { "key": "graphicDesign", "url": "/services/graphic-design" },
+        { "key": "webDesign", "url": "/services/web-design" },
+        { "key": "contentCreation", "url": "/services/content" }
+      ]
+    },
+    {
+      "id": "aboutUs",
+      "links": [
+        { "key": "aboutUs", "url": "/about" },
+        { "key": "aboutMe", "url": "/about/me" },
+        { "key": "ourTeam", "url": "/about/team" },
+        { "key": "testimonials", "url": "/testimonials" },
+        { "key": "getInTouch", "url": "/contact" }
+      ]
+    },
+    {
+      "id": "resources",
+      "links": [
+        { "key": "pricing", "url": "/pricing" },
+        { "key": "helpCenter", "url": "/help" },
+        { "key": "ourServices", "url": "/services" },
+        { "key": "termsOfUse", "url": "/terms" },
+        { "key": "privacyPolicy", "url": "/privacy" }
+      ]
+    }
+  ]
+}

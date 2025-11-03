@@ -1,0 +1,7 @@
+[
+  { "name": "Graphic Design", "delay": 400 },
+  { "name": "Content Creationg", "delay": 450 },
+  { "name": "Branding", "delay": 200 },
+  { "name": "Marketing", "delay": 250 },
+  { "name": "Web Design", "delay": 300 }
+]

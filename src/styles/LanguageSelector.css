@@ -1,0 +1,12 @@
+.btn-custom-blue {
+  background-color: #3f6ee9 !important; 
+  color: #ffffff !important; 
+  border: none !important; 
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-custom-blue:hover,
+.btn-custom-blue:focus {
+  background-color: #5a84f2 !important; 
+  box-shadow: 0 6px 16px rgba(63, 110, 233, 0.3);
+}

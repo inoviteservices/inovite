@@ -1,0 +1,26 @@
+[
+  {
+    "imgSrc": "/img/home/service01.jpg",
+    "alt": "Branding",
+    "title": "Branding",
+    "description": "We weave visual stories and craft strategic messaging that resonate at heartstrings, build unwavering trust, and turn customers into fervent brand champions."
+  },
+  {
+    "imgSrc": "/img/home/service02.jpg",
+    "alt": "Marketing",
+    "title": "Marketing",
+    "description": "We design data-driven campaigns that crackle with energy, ignite engagement like wildfire, and turn clicks into conversions. We're the storm that promote your brand."
+  },
+  {
+    "imgSrc": "/img/home/service03.jpg",
+    "alt": "Web Design",
+    "title": "Web Design",
+    "description": "We sculpt user-friendly websites that convert visitors into loyal devotees with intuitive navigation and flawless experiences for every screen. We craft that digital haven."
+  },
+  {
+    "imgSrc": "/img/home/service04.jpg",
+    "alt": "Graphic Design",
+    "title": "Graphic Design",
+    "description": "We craft visual masterpieces that sing your brand's story in vibrant colors and captivating shapes. From logos that lodge in minds to infographics that make complex ideas sing."
+  }
+]

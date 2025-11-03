@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Curology",
+    "category": "Branding",
+    "image": "/img/portfolio/portfolio01.jpg",
+    "link": "portfolio-post01.html"
+  },
+  {
+    "title": "Cookie Dough",
+    "category": "Advertising",
+    "image": "/img/portfolio/portfolio02.jpg",
+    "link": "portfolio-post02.html"
+  },
+  {
+    "title": "Gaming Power",
+    "category": "Marketing",
+    "image": "/img/portfolio/portfolio03.jpg",
+    "link": "portfolio-post03.html"
+  },
+  {
+    "title": "Riot Energy",
+    "category": "Advertising",
+    "image": "/img/portfolio/portfolio04.jpg",
+    "link": "portfolio-post04.html"
+  },
+  {
+    "title": "Smoothie",
+    "category": "Marketing",
+    "image": "/img/portfolio/portfolio05.jpg",
+    "link": "portfolio-post05.html"
+  },
+  {
+    "title": "Positive Beverage",
+    "category": "Branding",
+    "image": "/img/portfolio/portfolio06.jpg",
+    "link": "portfolio-post06.html"
+  },
+  {
+    "title": "Fashion Makeup",
+    "category": "Branding",
+    "image": "/img/portfolio/portfolio07.jpg",
+    "link": "portfolio-post07.html"
+  }
+]

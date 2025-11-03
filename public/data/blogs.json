@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "date": "August 20, 2025",
+    "title": "How to Build Stunning Web Apps with Django & React",
+    "description": "Discover how to combine Django for backend and React for frontend to build scalable and high-performance applications...",
+    "image": "https://images.pexels.com/photos/3761262/pexels-photo-3761262.jpeg"
+  },
+  {
+    "id": 2,
+    "date": "August 15, 2025",
+    "title": "Top 5 UI/UX Design Principles for Modern Web Apps",
+    "description": "A clean and intuitive UI is the key to user engagement. Learn the top design principles that make your web apps stand out...",
+    "image": "https://images.pexels.com/photos/3761262/pexels-photo-3761262.jpeg"
+  }
+]
