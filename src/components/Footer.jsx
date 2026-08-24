@@ -113,10 +113,14 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="bringer-footer-line stg-container">
-        <div className="align-center">
-          {t("footer.copyright", { year: 2025, company: company.name })}
-        </div>
-      </div>
+  <div className="align-center">
+    {t("footer.copyright", {
+      year: 2025,
+      company: company.name,
+    })}{" "}
+    | 📞 <a href="tel:+917447706777">+91 7447706777</a>
+  </div>
+</div>
     </footer>
   );
 }
