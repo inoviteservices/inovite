@@ -47,12 +47,23 @@ export default function Footer() {
                 </NavLink>
                 <div className="bringer-info-description">
                   {t("footer.company.description")}
-                </div>
-                <div className="footer-phone">
+                  <div style={{ marginTop: "15px" }}>
 
-    📞 <a href="tel:+917447706777">+91 7447706777</a>
+    <div>
+
+      📞 <a href="tel:+917447706777">+91 7447706777</a>
+
+    </div>
+
+    <div style={{ marginTop: "8px" }}>
+
+      ✉️ <a href="mailto:connect@inovite.in">connect@inovite.in</a>
+
+    </div>
 
   </div>
+                </div>
+               
                 <span className="bringer-label">{t("footer.followUs")}</span>
                 <ul
                   className="bringer-socials-list"
@@ -119,7 +130,10 @@ export default function Footer() {
       {/* Copyright */}
       <div className="bringer-footer-line stg-container">
         <div className="align-center">
-          {t("footer.copyright", { year: 2025, company: company.name })}
+          {t("footer.copyright", {
+  year: 2025,
+  company: company.name.replace(/\.$/, ""),
+})}
         </div>
       </div>
     </footer>
