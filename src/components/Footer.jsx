@@ -48,6 +48,11 @@ export default function Footer() {
                 <div className="bringer-info-description">
                   {t("footer.company.description")}
                 </div>
+                <div className="footer-phone">
+
+    📞 <a href="tel:+917447706777">+91 7447706777</a>
+
+  </div>
                 <span className="bringer-label">{t("footer.followUs")}</span>
                 <ul
                   className="bringer-socials-list"
